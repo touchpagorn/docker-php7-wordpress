@@ -9,6 +9,7 @@ services:
     volumes:
       - ./html:/var/www/html
       - ./config/php.ini:/usr/local/etc/php/php.ini
+      - ./config/nginx.conf:/opt/openresty/nginx/conf/nginx.conf
   db:
     image: mariadb:10.5.6
     container_name: db
